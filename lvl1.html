@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://codechangers.com/physics.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity camera
+                look-controls
+                wasd-controls="acceleration:100"
+                position="0 1.6 0">
+        <a-sphere color="red" position="0 -1 -2.1"
+                  kinematic-body></a-sphere>
+      </a-entity>
+      <a-entity environment="preset:forest;"></a-entity>
+      <a-box height="1" width="1" depth="1" position="5 3 -4">
+        <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+      </a-box>
+      <a-box height="1" width="1" depth="1" position="-5 3 -4">
+        <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+      </a-box>
+      <a-sphere position="0 8 -20" dynamic-body></a-sphere>
+        
+      <a-plane static-body position="0 -0.2 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+    </a-entity>
+    </a-scene>
+  </body>
+</html>
