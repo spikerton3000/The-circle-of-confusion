@@ -9,7 +9,15 @@
                 wasd-controls>
         <a-cursor intersection-spawn="Event: click; mixin: voxel"></a-cursor>
       </a-camera>
-      <a-box color="red"></a-box>
+      <a-box color="red"
+             id="lvl1"></a-box>
     </a-scene>
   </body>
+  <script>
+    document
+      .querySelector("#lvl1")
+      .addEventListener("click", e => {
+        location.href = "lvl1.html" 
+      })
+  </script>
 </html>
