@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="aframe.io/releases/0.9.1/aframe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     <script src="https://codechangers.com/physics.js"></script>
@@ -16,11 +15,6 @@
           <a-sphere color="red" position="0 -1 -2.1"
                   static-body></a-sphere>
       </a-entity>
-      <a-assets>
-        <a-asset-item id="tree" src="/path/to/tree.gltf"></a-asset-item>
-      </a-assets>
-
-      <a-entity gltf-model="#tree"></a-entity>
       <a-entity environment="preset:forest;"></a-entity>
       <a-box height="1" width="1" depth="1" position="5 3 -4">
         <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
