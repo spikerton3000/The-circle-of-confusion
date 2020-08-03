@@ -14,6 +14,7 @@
                 position="0 1.6 0">
           <a-sphere color="red" position="0 -1 -2.1"
                   static-body></a-sphere>
+          <a-cursor></a-cursor>
       </a-entity>
       <a-entity environment="preset:forest;"></a-entity>
       <a-box height="1" width="1" depth="1" position="5 3 -4">
@@ -28,4 +29,14 @@
     </a-entity>
     </a-scene>
   </body>
+
+  <script>
+    <script>
+    document
+      .querySelector("#lvl1")
+      .addEventListener("click", e => {
+        location.href = "lvl1.html" 
+      })
+  </script>
+  </script>
 </html>
